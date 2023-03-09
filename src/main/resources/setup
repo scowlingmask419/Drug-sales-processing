@@ -1,0 +1,8 @@
+./kafka-server-start.sh -daemon ../config/server.properties
+
+./kafka-server-start.sh -daemon ../config/server2.properties
+
+./kafka-server-start.sh -daemon ../config/server3.properties
+
+./kafka-topics.sh --bootstrap-server localhost:9092,localhost:9093,localhost:9094 --replication-factor 3 --partitions 3 --create --topic buying
+

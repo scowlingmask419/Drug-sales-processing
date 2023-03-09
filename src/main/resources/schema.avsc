@@ -1,0 +1,11 @@
+{"namespace": "example.avro",
+ "type": "record",
+ "name": "Buying",
+ "fields": [
+     {"name": "nom", "type": "string"},
+     {"name": "prenom",  "type": "string"},
+     {"name": "cip", "type": "string"},
+     {"name": "prix", "type": "string"},
+     {"name": "idPharma", "type": "string"}
+ ]
+}
